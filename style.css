@@ -1,0 +1,77 @@
+/* Stili per il corpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px clamp(10px,8%,80px);
+    background-color: #f4f4f4;
+  }
+
+p {
+    width: clamp(15ch,100%, 75ch); /* ch è unità di misura  */
+    font-size: clamp(0.7rem, 3vw, 1rem);       
+}
+span{
+ font-weight: 800;
+}
+
+li {
+  margin-bottom: 20px;
+  font-size: clamp(0.7rem, 3vw, 1rem);     
+}
+
+li p {
+    font-style: oblique;
+}
+  
+  /* Stili per gli ID */
+  #row1 {
+    display:flex;
+    justify-content: center;
+    
+    
+  }
+  #column1,#column2,#column3 {
+   margin:10px;
+   background-color: aquamarine;
+
+  }
+
+  #column1 {
+  width: clamp(80px,70%,400px);
+
+  }
+
+  #column2 {
+    width: clamp(10px,20%,80px);
+  
+    }
+
+    #column3 {
+    width: 200px;
+      height:150px;
+        }
+
+  
+  /* Stili per il testo */
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #666; text-align: center;
+  }
+  
+  h3 {
+    color: #999;
+    font-size: clamp(0.7rem, 3vw, 1rem);   
+   
+  }
+  
+  /* Stili per le immagini */
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }

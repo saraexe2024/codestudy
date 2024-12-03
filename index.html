@@ -1,10 +1,33 @@
 <html>
-
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 <body>
-  <h1>SARA</h1>
-  <h2>...e Roberto!</h2>
-  <p>Welcome to my website!</p>
+  <h1>Sara e Roberto</h1>
+  <h3>keep in mind</h3>
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <p>Questo testo ha due impostazioni molto interessanti per il responsive e per una buona esperienza utente. Si tratta della grandezza del carattere adattiva e della lunghezza del paragrafo ( in caratteri ) sempre adattiva. Si può fare con le funzioni matematiche nel css e si tratta di:</p>
+  <ol>
+    <li><span>clamp(15ch,100%, 75ch)</span> dove "ch" è l'unità di misura che conta il numero di caratteri. Funziona così: <p>impostami la cosa che ho scelto al valore "100%" controllando però che non superi i 75 caratteri e che non sia meno di 15 caratteri</p> Diventa per esempio: <span>width: clamp(15ch,100%, 75ch);</span>  </li>
+    
+    <li><span>clamp(0.7rem, 3vw, 1rem); </span> dove rem e vw sono unità di misura della grandezza del font. "vw" sta per viewport e paragona la grandezza del font a quella dello schermo. <p> 3vh è ad esempio il 3% della grandezza del viewport </p> "rem" è invece un'unità relativa ad una grandezza font principale che va impostata direttamente sul "html" nel css ( sta infatti per root em). Si utilizza per sostituire il valore "px" perchè non scalabile. <p>html{font-size:62.5%;}<br>p  { font-size: 1.4em; } questo sarà 14px</p>Tornando quindi all funzione,funziona così: <p> impostami la dimensioni del testo che ho scelto ad una dimensione del 3% dello schermo (3vw) ma non fargli mai superare 1 rem e non la far scendere mai sotto ai 0.7 rem </p> diventa per esempio: <span>font-size: clamp(0.7rem, 3vw, 1rem); </span> 
+  </ol>
+  <h3>fonti: <a href=https://web.dev/articles/min-max-clamp?hl=it">https://web.dev/articles/min-max-clamp?hl=it</a></h3>
+
+  <h1>Responsive </h1>
+  <div id='row1'>
+    <div id='column1'>
+      <h2>1</h2>
+    </div>
+    <div id='column2'>
+      <h2>2</h2>
+    </div>
+    <div id='column3'>
+      <h2>3</h2>
+    </div>
+  </div>
+ 
+  </div>
 </body>
 
 </html>
